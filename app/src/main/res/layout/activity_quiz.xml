@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEBEB"
+    tools:context=".Quiz">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#673AB7"
+            android:gravity="center"
+            android:text="Quiz 1"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Que pais é esse ?"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/bulgaria" />
+
+        <RadioGroup
+            android:id="@+id/rdgMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <RadioButton
+                android:id="@+id/rdbFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guatemala" />
+
+            <RadioButton
+                android:id="@+id/rdbSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coreia do Sul" />
+
+            <RadioButton
+                android:id="@+id/rdbThird"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brasil" />
+
+            <RadioButton
+                android:id="@+id/rdbFourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bulgaria" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAnswer"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#000000"
+            android:backgroundTint="#673AB7"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="Responder" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
